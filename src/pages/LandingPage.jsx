@@ -1,6 +1,6 @@
 import React from "react";
 import About from "../components/About";
-import Home from "../components/home";
+import Home from "../components/Home";
 import Visuals from "../components/Visuals";
 import Services from "../components/Services";
 import Contact from "../components/Contact";
