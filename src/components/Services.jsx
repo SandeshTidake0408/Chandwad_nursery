@@ -18,16 +18,16 @@ export default function Services() {
 	}, []);
 
 	const services = [
-		{ title: "आंबा", detail: "केशर घफुस, राजापुरी" },
-		{ title: "पेरू", detail: "2-49" },
-		{ title: "चीकू", detail: "कालिपली" },
+		{ title: "आंबा", detail: "केशर, हाफूस" },
+		{ title: "पेरू", detail: "लखनऊ - 49" },
+		{ title: "चीकू", detail: "कालीपत्ती" },
 		{ title: "डाळिंब", detail: "सु-भगवा" },
 		{ title: "लिंबू", detail: "साई सरबती" },
 		{ title: "नारळ", detail: "बानावली" },
 		{ title: "सीताफळ", detail: "बाळानगर" },
 		{
 			title: "इतर",
-			detail: "वनरोपे, शोभवंत फुल झाडें, व इतर रोपे उपलब्ध.",
+			detail: "वनरोपे, शोभवंत फुल झाडें, व इतर रोपे उपलब्ध.",
 		},
 	];
 
