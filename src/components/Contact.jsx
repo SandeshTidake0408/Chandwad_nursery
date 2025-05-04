@@ -72,7 +72,7 @@ export default function Contact() {
 							href="mailto:90.chandwad100@gmail.com"
 							className="text-blue-600 underline"
 						>
-							90.chandwad100@gmail.com
+							ao.chandwad100@gmail.com
 						</a>
 					</p>
 				</div>

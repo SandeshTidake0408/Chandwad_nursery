@@ -15,7 +15,7 @@ export default function Footer() {
 						ता. चांदवड, जि. नाशिक - 423101
 					</p>
 					<p className="mt-2 text-sm">
-						ईमेल: 90.chandwad100@gmail.com
+						ईमेल: ao.chandwad100@gmail.com
 					</p>
 				</div>
 
