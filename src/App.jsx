@@ -1,13 +1,12 @@
-import { useState } from "react";
-import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+
+import RouteConfig from "./RouteConfig";
 
 function App() {
-	const [count, setCount] = useState(0);
-
 	return (
-		<>
-			<h1>React</h1>
-		</>
+		<BrowserRouter>
+			<RouteConfig />
+		</BrowserRouter>
 	);
 }
 
