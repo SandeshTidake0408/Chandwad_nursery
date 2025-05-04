@@ -4,6 +4,9 @@ export default function Visuals() {
 	const [visible, setVisible] = useState(false);
 	const sectionRef = useRef(null);
 
+	// Detect if device is mobile
+	const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+
 	useEffect(() => {
 		const observer = new IntersectionObserver(
 			([entry]) => {
@@ -15,6 +18,8 @@ export default function Visuals() {
 			{ threshold: 0.1 }
 		);
 		if (sectionRef.current) observer.observe(sectionRef.current);
+
+		return () => observer.disconnect();
 	}, []);
 
 	// Image paths (.jpg — update extension if needed)
@@ -37,13 +42,10 @@ export default function Visuals() {
 					<div
 						key={index}
 						className={`transition-all duration-700 ${
-							visible
+							visible || isMobile
 								? "opacity-100 translate-y-0"
 								: "opacity-0 translate-y-5"
-						} sm:flex-[1_1_100%] md:flex-[1_1_20%] `}
-						// style={{
-						// 	flex: "1 1 100%", // base: 1 per row
-						// }}
+						} sm:flex-[1_1_100%] md:flex-[1_1_20%]`}
 					>
 						<div className="overflow-hidden rounded-md shadow-sm">
 							<img
